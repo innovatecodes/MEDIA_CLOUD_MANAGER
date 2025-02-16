@@ -19,6 +19,11 @@
 
 A API é restrita para operações POST, PUT e DELETE. Essas operações exigem autenticação e permissões específicas. Apenas requisições GET são públicas e podem ser utilizadas livremente.
 
+
+## Restrição de Operações
+
+A API é restrita para operações POST, PUT e DELETE. Essas operações exigem autenticação e permissões específicas. Apenas requisições GET são públicas e podem ser utilizadas livremente.
+
 ## Instalação
 
 1. Clone o repositório:
@@ -56,8 +61,8 @@ A API é restrita para operações POST, PUT e DELETE. Essas operações exigem 
         npm run dev
     ```
 7. Ambiente de produção:
-    A API já está em produção e pode ser acessada em: [API](https://mediacloudmanager.azurewebsites.net)
-  
+ A API já está em produção e pode ser acessada em: [API](https://mediacloudmanager.azurewebsites.net)
+ 
 ## Configuração da Cloudinary
 
 Para permitir o upload de imagens na API, siga os passos abaixo:
