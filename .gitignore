@@ -1,0 +1,28 @@
+# Ignorar o diretório node_modules
+/node_modules
+
+# Ignorar o diretório src/app/database/scripts
+/src/app/database/scripts
+
+# Ignorar todos os arquivos .env
+.env*
+
+# Ignorar o arquivo EXECUTION-SCRIPT.README.md
+EXECUTION-SCRIPT.README.md
+
+# Ignorar todos os arquivos .http
+*.http
+
+# Ignorar o arquivo example.http especificamente
+example.http
+
+# Ignorar o arquivo db.json especificamente
+db.json
+
+# Exceto o .env.example
+!.env.example
+
+
+
+
+

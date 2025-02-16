@@ -1,0 +1,1 @@
+SELECT * FROM fn_CustomQuery(@Term, NULL, NULL);

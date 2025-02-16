@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Media Cloud Manager</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      ul {
+        list-style-position: inside;
+        list-style-type: disc;
+      }
+      ol {
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <h1 class="text-left display-4 mt-5">Media Cloud Manager</h1>
+    </header>
+
+    <main class="container">
+      <div class="row p-3">
+        <ul class="col-sm-12 col-md-8 col-lg-auto">
+          <li>
+            <strong>Description:</strong>
+            <ol>
+              <li>
+                API para gerenciamento e listagem de mídias (vídeos, séries e
+                músicas), utilizando banco de dados SQL Server para persistência
+                de dados em produção.
+              </li>
+            </ol>
+          </li>
+
+          <li><strong>Version:</strong> <span id="version"></span></li>
+          <li>
+            <strong>Author:</strong> Ronaldo Lopes
+            <a href="mailto:contato@innovatecodes.com"
+              >contato@innovatecodes.com</a
+            >
+          </li>
+         
+          <li><strong>Created At:</strong> <span id="createdAt"></span></li>
+          <li><strong>Last Update:</strong> <span id="updatedAt"></span></li>
+          <li>
+            <strong>License:</strong>
+            <ul>
+              <li><strong>Type:</strong> MIT</li>
+              <li>
+                <strong>URL:</strong>
+                <a href="https://opensource.org/licenses/MIT" target="_blank"
+                  >MIT License</a
+                >
+              </li>
+              <li>
+                <strong>Terms:</strong> Permite a utilização, cópia,
+                modificação, fusão, publicação, distribuição, sublicenciamento
+                e/ou venda de cópias do Software, desde que a cópia do aviso de
+                copyright e a permissão sejam incluídas em todas as cópias do
+                Software.
+              </li>
+            </ul>
+          </li>
+          <div>
+            <h3 class="text-left display-6 my-2">Routes</h3>
+            <p>
+              Somente o método GET está disponível para usuários não
+              autenticados, permitindo consultas públicas aos dados.
+            </p>
+            <ul style="list-style: none">
+              <li>GET <a href="/media">/media</a></li>
+              <li>GET <a href="/media/1">/media/1</a></li>
+              <li>
+                GET
+                <a href="/media/search?search=O%20cunhado%20perigoso"
+                  >/media/search?search=O%20cunhado%20perigoso</a
+                >
+              </li>
+              <li>GET <a href="/media?page=2&limitPerPage=5&sortByField=title&reverseOrder=desc">/media?page=2&limitPerPage=5&sortByField=title&reverseOrder=desc</a></li>
+              <li>POST <a>/media</a></li>
+              <li>PUT <a>/media/1</a></li>
+              <li>DELETE <a>/media/1</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p class="text-center">
+        &copy; <span id="year"></span><span id="nextYear"></span>
+        <a href="https://innovatecodes.com" target="_blank">Innovate Codes</a> |
+        Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

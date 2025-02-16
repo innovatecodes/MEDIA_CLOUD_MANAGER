@@ -1,0 +1,35 @@
+{
+  /**
+    * Extende as configurações básicas recomendadas pelo pacote "@tsconfig/recommended".
+    * OBS: Certifique-se de instalar este pacote como dependência de desenvolvimento:
+    * npm i @tsconfig/recommended
+  */
+  // "extends": "@tsconfig/recommended/tsconfig.json",
+  "extends": "@tsconfig/node20/tsconfig.json", 
+
+  "compilerOptions": { 
+    "rootDir": "src", // Define o diretório raiz onde os arquivos TypeScript estão localizados.
+    "outDir": "dist", // Define o diretório onde os arquivos JavaScript compilados serão armazenados.
+    "sourceMap": false, // Não gera mapas de origem (útil para debugging, mas desativado aqui).
+    "noImplicitAny": true, // Erros serão lançados para variáveis sem tipo explícito ou inferido.
+    "noImplicitReturns": true, // Garante que todas as funções tenham um retorno explícito.
+    "noEmitOnError": true, // Impede a geração de arquivos JS caso haja erros de compilação.
+    "strictNullChecks": true, // Exige que valores `null` e `undefined` sejam tratados explicitamente.
+    "skipLibCheck": true, // Ignora a verificação de tipos em arquivos de declaração de biblioteca (`*.d.ts`).
+    "noUnusedLocals": false // Permite variáveis locais não utilizadas (pode ser `true` para código mais limpo).
+    // "strict": true, // Se quiser ativar todas as verificações rigorosas do TypeScript.
+    // "esModuleInterop": true, // Se estiver importando módulos CommonJS com `import fs from 'fs'`.
+  },
+
+  "compileOnSave": true, // Faz a recompilação automática ao salvar um arquivo TypeScript.
+
+  "include": [
+    "src/**/*" // Inclui todos os arquivos TypeScript dentro do diretório `src`.
+  ], 
+
+
+  "exclude": [
+  "**/*.spec.ts" // Exclui arquivos de teste (`.spec.ts`) da compilação.
+  ]
+
+}
