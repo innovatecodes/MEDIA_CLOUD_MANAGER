@@ -32,9 +32,9 @@ export class MediaCloudManagerService {
     try {
       const page = req.query.page;
       const limitPerPage = req.query.limitPerPage;
-      const sortByField = req.query.sortByField as any;
+      const sortByField = req.query.sortByField;
       let reverseOrder = req.query.reverseOrder?.toString().toUpperCase();
-
+      
       const records = await this._mediaRepository.getAll();
 
       if (!records.recordset.length) throw new NotFoundError("Nenhum registro foi encontrado!");
@@ -110,7 +110,7 @@ export class MediaCloudManagerService {
         mediaDescription: (mediaDescription as string).trim(),
         title: (title as string).trim(),
         link: (link as string).trim(),
-        defaultImageFile: `${process.env.URL}:${process.env.PORT}/uploads/no-image.jpg`,
+        defaultImageFile: req.hostname.includes('localhost') ? `${process.env.URL}:${process.env.PORT}/uploads/no-image.jpg` : `${process.env.URL}/uploads/no-image.jpg`,
         cloudinarySecureUrl: (res?.locals as { secure_url: string })?.secure_url,
         temporaryPublicId: (res?.locals as { public_id: string }).public_id?.replace('uploads/', ''),
       }
@@ -167,7 +167,7 @@ export class MediaCloudManagerService {
       categoryList: [...(column.CategoryList as string).split(',')].map(property => removeWhiteSpace(property.trimStart())),
       mediaDescription: column.MediaDescription,
       title: column.Title,
-      postedAt: column.PostedAt,
+      postedAt: (column.PostedAt as Date),
       updatedAt: column.UpdatedAt,
       link: column.Link,
       defaultImageFile: column.DefaultImageFile,

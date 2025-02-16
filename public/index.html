@@ -11,12 +11,25 @@
       crossorigin="anonymous"
     />
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        overflow-x: hidden;
+      }
       ul {
         list-style-position: inside;
         list-style-type: disc;
       }
       ol {
         list-style-position: inside;
+      }
+
+      a {
+        display: inline-block;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
       }
     </style>
   </head>
@@ -26,7 +39,7 @@
     </header>
 
     <main class="container">
-      <div class="row p-3">
+      <div class="row p-2">
         <ul class="col-sm-12 col-md-8 col-lg-auto">
           <li>
             <strong>Description:</strong>
@@ -46,7 +59,7 @@
               >contato@innovatecodes.com</a
             >
           </li>
-         
+
           <li><strong>Created At:</strong> <span id="createdAt"></span></li>
           <li><strong>Last Update:</strong> <span id="updatedAt"></span></li>
           <li>
@@ -83,7 +96,13 @@
                   >/media/search?search=O%20cunhado%20perigoso</a
                 >
               </li>
-              <li>GET <a href="/media?page=2&limitPerPage=5&sortByField=title&reverseOrder=desc">/media?page=2&limitPerPage=5&sortByField=title&reverseOrder=desc</a></li>
+              <li>
+                GET
+                <a
+                  href="/media?page=2&limitPerPage=5&sortByField=title&reverseOrder=desc"
+                  >/media?page=2<wbr>&limitPerPage=5<wbr>&sortByField=title<wbr>&reverseOrder=desc</a
+                >
+              </li>
               <li>POST <a>/media</a></li>
               <li>PUT <a>/media/1</a></li>
               <li>DELETE <a>/media/1</a></li>

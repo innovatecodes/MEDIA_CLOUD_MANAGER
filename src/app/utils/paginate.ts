@@ -10,7 +10,7 @@ export const paginate = (
     page: number,
     limit: number,
     response: IMediaResponse[], // Lista de dados a serem paginados
-    sortByField: IMediaResponse, // Campo para ordenação
+    sortByField: any, // Campo para ordenação
     reverseOrder: string = 'ASC', // Ordem padrão: ascendente
 ) => {
     const { search } = parseUrlSearch(req); // Extrai os parâmetros de busca da URL
@@ -66,13 +66,13 @@ export const paginate = (
         }
         // Se sortByField for uma string, ordena por título ou data de postagem
         else if (typeof sortByField === 'string') {
-            if (a.title && b.title) {
+            if (a.title && b.title && sortByField === 'title') {
                 return reverseOrder === 'DESC'
                     ? b.title.localeCompare(a.title) // Ordem decrescente
                     : a.title.localeCompare(b.title); // Ordem crescente
             }
 
-            if (a.postedAt && b.postedAt) {
+            if (a.postedAt && b.postedAt && sortByField === 'postedAt') {
                 return reverseOrder === 'DESC'
                     ? b.postedAt.getTime() - a.postedAt.getTime() // Ordem decrescente
                     : a.postedAt.getTime() - b.postedAt.getTime(); // Ordem crescente
