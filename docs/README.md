@@ -14,12 +14,6 @@
 - **URL**: [MIT License](https://opensource.org/licenses/MIT)
 - **Termos**: Permite a utilização, cópia, modificação, fusão, publicação, distribuição, sublicenciamento e/ou venda de cópias do Software, desde que a cópia do aviso de copyright e a permissão sejam incluídas em todas as cópias do Software.
 
-
-## Restrição de Operações
-
-A API é restrita para operações POST, PUT e DELETE. Essas operações exigem autenticação e permissões específicas. Apenas requisições GET são públicas e podem ser utilizadas livremente.
-
-
 ## Restrição de Operações
 
 A API é restrita para operações POST, PUT e DELETE. Essas operações exigem autenticação e permissões específicas. Apenas requisições GET são públicas e podem ser utilizadas livremente.
