@@ -14,6 +14,11 @@
 - **URL**: [MIT License](https://opensource.org/licenses/MIT)
 - **Termos**: Permite a utilização, cópia, modificação, fusão, publicação, distribuição, sublicenciamento e/ou venda de cópias do Software, desde que a cópia do aviso de copyright e a permissão sejam incluídas em todas as cópias do Software.
 
+
+## Restrição de Operações
+
+A API é restrita para operações POST, PUT e DELETE. Essas operações exigem autenticação e permissões específicas. Apenas requisições GET são públicas e podem ser utilizadas livremente.
+
 ## Instalação
 
 1. Clone o repositório:
@@ -50,7 +55,9 @@
     ```bash
         npm run dev
     ```
-
+7. Ambiente de produção:
+    A API já está em produção e pode ser acessada em: [API](https://mediacloudmanager.azurewebsites.net)
+  
 ## Configuração da Cloudinary
 
 Para permitir o upload de imagens na API, siga os passos abaixo:
