@@ -7,9 +7,6 @@
 # Ignorar todos os arquivos .env
 .env*
 
-# Ignorar todos os arquivos .deployment
-.deployment*
-
 # Ignorar o arquivo EXECUTION-SCRIPT.README.md
 EXECUTION-SCRIPT.README.md
 
