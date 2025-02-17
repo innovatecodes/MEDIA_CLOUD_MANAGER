@@ -177,5 +177,5 @@ Para permitir o upload de imagens na API, siga os passos abaixo:
 
   - #### Exemplo de Requisição:
     ```bash
-        GET http://localhost:8081/media?page=2&limitPerPage=5&sortByField=title&reverseOrder=desc
+        GET http://localhost:8081/media?page=1&limitPerPage=20&sortByField=postedAt&reverseOrder=desc
     ```
