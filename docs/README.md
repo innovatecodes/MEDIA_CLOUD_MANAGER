@@ -54,8 +54,7 @@ A API é restrita para operações POST, PUT e DELETE. Essas operações exigem 
     ```bash
         npm run dev
     ```
-7. Ambiente de produção:
-    A API já está em produção e pode ser acessada em: [API](https://mediacloudmanager.azurewebsites.net)
+7. Projeto em produção: [https://mediacloudmanager.azurewebsites.net](https://mediacloudmanager.azurewebsites.net)
  
 ## Configuração da Cloudinary
 
