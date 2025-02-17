@@ -12,6 +12,7 @@
     />
     <style>
       * {
+        box-sizing: border-box;
         padding: 0;
         margin: 0;
       }
@@ -24,12 +25,6 @@
       }
       ol {
         list-style-position: inside;
-      }
-
-      a {
-        display: block;
-        /* overflow-wrap: break-word;
-        word-wrap: break-word; */
       }
     </style>
   </head>
@@ -95,7 +90,7 @@
                 >
               </li>
               <li>
-                GET <ahref="/media?page=1&limitPerPage=20&sortByField=postedAt&reverseOrder=desc">/media?page=1<wbr>&limitPerPage=20<wbr>&sortByField=postedAt<wbr>&reverseOrder=desc</a>
+                GET <a href="/media?page=1&limitPerPage=20&sortByField=postedAt&reverseOrder=desc">/media?page=1<wbr>&limitPerPage=20<wbr>&sortByField=postedAt<wbr>&reverseOrder=desc</a>
               </li>
               <li>POST <a>/media</a></li>
               <li>PUT <a>/media/1</a></li>
