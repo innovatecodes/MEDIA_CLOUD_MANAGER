@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const date = new Date();
 
     document.getElementById('createdAt').textContent = getFormattedDate("2025-1-8");
-    document.getElementById('updatedAt').textContent = getFormattedDate("2025-02-16"); //date.toLocaleDateString();
+    document.getElementById('updatedAt').textContent = getFormattedDate("2025-07-05"); //date.toLocaleDateString();
     document.getElementById('year').textContent = 2025;
     document.getElementById('version').textContent = '1.0';
 
