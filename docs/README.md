@@ -4,7 +4,7 @@
                 músicas), utilizando banco de dados SQL Server para persistência
                 de dados.
 - **Versão**: 1.0
-- **Autor**: Ronaldo Lopes <contato@innovatecodes.com>
+- **Autor**: Ronaldo Lopes <innovatecodes@gmail.com>
 - **Criado em**: 08/01/2025
 - **Última atualização**: 16/02/2025
 
@@ -29,7 +29,7 @@ A API é restrita para operações POST, PUT e DELETE. Essas operações exigem 
     ```bash
         npm install
     ```
-3. Configure o banco de dados no `.env.development`:
+3. Configure o banco de dados no `.env`:
     ```env
         DB_USER= # Usuário do SQL Server
         DB_PASSWORD= # Senha do SQL Server
@@ -44,7 +44,7 @@ A API é restrita para operações POST, PUT e DELETE. Essas operações exigem 
    ```env
        API_KEY= # Chave da API para autenticação em serviços externos
    ```
-5. Configure a Cloudinary no `.env.development`:
+5. Configure a Cloudinary no `.env`:
     ```env
         CLOUDINARY_CLOUD_NAME= # Nome do cloud associado à conta Cloudinary
         CLOUDINARY_API_KEY= # Chave de API usada para autenticação com os serviços do Cloudinary
@@ -52,17 +52,16 @@ A API é restrita para operações POST, PUT e DELETE. Essas operações exigem 
     ```
 6. Inicie o servidor:
     ```bash
-        npm run dev
+        npm start
     ```
-7. Projeto em produção: [https://mediacloudmanager.azurewebsites.net](https://mediacloudmanager.azurewebsites.net)
- 
+    
 ## Configuração da Cloudinary
 
 Para permitir o upload de imagens na API, siga os passos abaixo:
 
 1. Acesse o site da [Cloudinary](https://cloudinary.com/) e crie uma conta.
 2. No painel de controle, copie as credenciais `CLOUD_NAME`, `API_KEY` e `API_SECRET`.
-3. Adicione essas credenciais no arquivo `.env.development` conforme indicado na seção de instalação.
+3. Adicione essas credenciais no arquivo `.env` conforme indicado na seção de instalação.
    
 ## Endpoints da API
 
