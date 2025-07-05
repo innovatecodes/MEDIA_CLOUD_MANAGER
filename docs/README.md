@@ -6,7 +6,7 @@
 - **Versão**: 1.0
 - **Autor**: Ronaldo Lopes <innovatecodes@gmail.com>
 - **Criado em**: 08/01/2025
-- **Última atualização**: 16/02/2025
+- **Última atualização**: 05/07/2025
 
 ## Licença
 
