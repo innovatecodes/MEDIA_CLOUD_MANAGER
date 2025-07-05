@@ -50,7 +50,7 @@
           <li><strong>Version:</strong> <span id="version"></span></li>
           <li>
             <strong>Author:</strong> Ronaldo Lopes
-            <a href="mailto:innovatecodes@gmail.com"
+            <a aria-label="Enviar e-mail" href="mailto:innovatecodes@gmail.com"
               >innovatecodes@gmail.com</a
             >
           </li>
@@ -63,7 +63,11 @@
               <li><strong>Type:</strong> MIT</li>
               <li>
                 <strong>URL:</strong>
-                <a href="https://opensource.org/licenses/MIT" target="_blank"
+                <a
+                  aria-label="Licença: MIT"
+                  href="https://opensource.org/licenses/MIT"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >MIT License</a
                 >
               </li>
@@ -86,11 +90,17 @@
               <li>GET <a href="/media">/media</a></li>
               <li>GET <a href="/media/1">/media/1</a></li>
               <li>
-                GET <a href="/media/search?search=O%20cunhado%20perigoso">/media/search?search=O%20cunhado%20perigoso</a
+                GET
+                <a href="/media/search?search=O%20cunhado%20perigoso"
+                  >/media/search?search=O%20cunhado%20perigoso</a
                 >
               </li>
               <li>
-                GET <a href="/media?page=1&limitPerPage=20&sortByField=postedAt&reverseOrder=desc">/media?page=1<wbr>&limitPerPage=20<wbr>&sortByField=postedAt<wbr>&reverseOrder=desc</a>
+                GET
+                <a
+                  href="/media?page=1&limitPerPage=20&sortByField=postedAt&reverseOrder=desc"
+                  >/media?page=1<wbr />&limitPerPage=20<wbr />&sortByField=postedAt<wbr />&reverseOrder=desc</a
+                >
               </li>
               <li>POST <a>/media</a></li>
               <li>PUT <a>/media/1</a></li>
@@ -104,8 +114,14 @@
     <footer>
       <p class="text-center">
         &copy; <span id="year"></span><span id="nextYear"></span>
-        <a href="https://innovatecodes.github.io" target="_blank">Innovate Codes</a> |
-        Todos os direitos reservados.
+        <a
+          aria-label="Ir para página do desenvolvedor"
+          href="https://innovatecodes.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Innovate Codes</a
+        >
+        | Todos os direitos reservados.
       </p>
     </footer>
     <script src="js/script.js"></script>
